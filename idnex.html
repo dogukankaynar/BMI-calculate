@@ -1,25 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <div class="header-logo">
-                <img height="32px" src="https://kompanionapp.com/wp-content/uploads/2020/05/kompanion-logo-web-1.svg"" alt="">
-            </div>
-            <div class="header-menu">
-                <a class="header-menu-item" href="">Blog</a>
-                <a class="header-menu-item" href="">Fasting</a>
-                <a class="header-menu-item" href="">Fitness</a>
-                <a class="header-menu-item" href="">Period</a>
-            </div>
+      <div class="header">
+        <div class="header-logo">
+          <img height="32px"
+          src="https://kompanionapp.com/wp-content/uploads/2020/05/kompanion-logo-web-1.svg""
+          alt="">
         </div>
+        <div class="header-menu">
+          <a class="header-menu-item" href="">Blog</a>
+          <a class="header-menu-item" href="">Fasting</a>
+          <a class="header-menu-item" href="">Fitness</a>
+          <a class="header-menu-item" href="">Period</a>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="content-first">
+          <div class="content-firts-text">
+            <h1>Calculate your Ideal Body Weight ⚖️</h1>
+            <p>
+              Ideal body weight (IBW) is the weight believed to have the maximum
+              health potential and the lowest risk of mortality for that person.
+            </p>
+          </div>
+          <div class="contet-first-card">
+            <div class="gender">
+              <div class="gender-text"><p>Select yoru sex</p></div>
+              <div class="gender-card">
+                <div class="gender-sex">
+                  <img class="icon" src="./css/img/male.png" alt="" />
+                  <p>Male</p>
+                  <input type="checkbox" />
+                </div>
+                <div class="gender-sex">
+                  <img style="width:35px;" class="icon" src="./css/img/famele.png" alt="" />
+                  <p>Famele</p>
+                  <input type="checkbox" />
+                </div>
+              </div>
+            </div>
+            <div class="card-input-age">
+                    <p>Enter your age</p>
+                    <input type="text" placeholder="eg. 25">
+            </div>
+            <div class="card-input-height">
+                <div>
+                    <div>
+                        <p>Enter your height</p>
+                    </div>
+                    <div>
+                        <p>CM</p>
+                        <p>FT</p>
+                    </div>
+                </div>
+                <div>
+                    <input type="text" placeholder="eg. 172">
+                </div>
+            </div>
+            <button class="card-btn"></button>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
