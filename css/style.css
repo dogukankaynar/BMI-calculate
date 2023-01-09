@@ -222,7 +222,7 @@ color: #242E42;
 }
 .menu-space-arround{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content:space-between;
 }
 .space-arround{
@@ -284,4 +284,7 @@ color: #242E42;
 
 .content-title{
     font-size: 20px;
+}
+summary{
+    list-style: none;
 }
