@@ -39,6 +39,8 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 50px;
+    
 }
 .content-first{
     display: flex;
@@ -190,7 +192,7 @@ color: #242E42;
     color:white
 }
 .content-second{
-    margin-top: 120px;
+    margin-top: 12px;
     width: 826px;
     display: flex;
     flex-direction: column;
@@ -241,7 +243,7 @@ color: #242E42;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    padding: 10px;
 }
 .footer{
     width: 800px;
@@ -249,8 +251,8 @@ color: #242E42;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    padding: 80px 202px;
-    gap: 170px;
+    gap: 10px;
+    padding: 10px;
     
 }
 .footer-logo{
@@ -262,7 +264,7 @@ color: #242E42;
 }
 .footer-menu{
     display: flex;
-    gap: 137px;
+    gap: 50px;
 }
 .icon{
     display: flex;
@@ -288,4 +290,66 @@ color: #242E42;
 }
 summary{
     list-style: none;
+}
+.reuslt-menu{
+    display: flex;
+    width: 827px;
+    height:auto;
+    align-items: center;
+    padding:24px 32px;
+    gap:32px;   
+    border: 1px solid #E6EBF0;
+    border-radius: 12px;
+    background-color: #FFFF;
+}
+.first-card{
+    width: 60%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 400px;
+}
+.first-card-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card-title{
+    font-size:11px;
+    color: #505A6D;
+}
+.card-description{
+    font-weight: bold;
+    font-size: 16px;
+    color: #242E42;
+}
+.weight-description{
+    font-size: 40px;
+    color: #4A980A;
+}
+.ıbw-description{
+    font-size: 16px;
+    color: #505A6D;
+}
+.values{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.values div{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height:40px;
+    gap: 4px;
+    padding:5px;
+    border: 1px solid #E6EBF0;
+    border-radius: 5px;
+}
+.second-card img{
+    width:400px;
 }
