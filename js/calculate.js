@@ -1,7 +1,8 @@
-function calculateNow(){
-    let weight = document.getElementById("weight").value;
-    let height = document.getElementById("height").value;
-    let ıbw = weight/height;
+const calculateNow = () => {
+    let k = document.getElementById("weight").value;
+    let b = document.getElementById("height").value/100;
+    let ıbw = Math.round(k/ (b*b));
     console.log(ıbw);
-}
+};
+
 export {calculateNow}
