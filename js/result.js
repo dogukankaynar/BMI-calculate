@@ -1,6 +1,6 @@
-let showUI = (weight,height,ibwDescription,idealWeight)=>{
-    let menu = document.getElementById('menu');
-    menu.innerHTML = `<div class="reuslt-menu">
+let showUI = (weight, height, ibwDescription, idealWeight) => {
+  let menu = document.getElementById("menu");
+  menu.innerHTML = `<div class="reuslt-menu">
     <div class="first-card">
         <div class="values">
             <div>
@@ -28,54 +28,55 @@ let showUI = (weight,height,ibwDescription,idealWeight)=>{
     </div>
 </div>`;
 
-console.log("calıstım");
-}
-
-const calculateReruslt =(ıbw,k,b,idealKilo)=>{
-    let sex = document.getElementById('sex');
-    let weight = document.getElementById('weight');
-    let height = document.getElementById('height');
-    let ibwDescription = document.getElementById('ibwDescription');
-    let idealWeight = document.getElementById('idealWeight');
-
-    
-    console.log(ıbw);
-    if(ıbw<=18){
-        weight=k;
-        height=b*100;
-        idealWeight=idealKilo;
-        ibwDescription="Boyunuza göre uygun ağırlıkta olmadığınızı, zayıf olduğunuzu gösterir. Boyunuza uygun ağırlığa erişmeniz için yeterli ve dengeli beslenmeli, beslenme alışkanlıklarınızı geliştirmeye özen göstermelisiniz."
-    }
-    else if(ıbw<24){
-        weight=k;
-        height=b*100;
-        idealWeight=idealKilo;
-        ibwDescription="Boyunuza göre uygun ağırlıkta olduğunuzu gösterir. Yeterli ve dengeli beslenerek ve düzenli fiziksel aktivite yaparak bu ağırlığınızı korumaya özen gösteriniz."
-    }
-    else if(ıbw<29){
-        weight=k;
-        height=b*100;
-        idealWeight=idealKilo;
-        ibwDescription="Boyunuza göre vücut ağırlığınızın fazla olduğunu gösterir. Fazla kilolu olma durumu gerekli önlemler alınmadığı takdirde pek çok hastalık için risk faktörü olan obeziteye (şişmanlık) yol açar."
-    }
-    else if(ıbw<34){
-        weight=k;
-        height=b*100;
-        idealWeight=idealKilo;
-        ibwDescription="1. Derece Obezite. Boyunuza göre vücut ağırlığınızın fazla olduğunu bir başka deyişle şişman olduğunuzun bir göstergesidir. Şişmanlık, kalp-damar hastalıkları, diyabet, hipertansiyon v.b. kronik hastalıklar için risk faktörüdür. "
-    }
-    else if(ıbw<39){
-        weight=k;
-        height=b*100;
-        idealWeight=idealKilo;
-        ibwDescription="2. Derece Obezite. Boyunuza göre vücut ağırlığınızın fazla olduğunu bir başka deyişle şişman olduğunuzun bir göstergesidir. Şişmanlık, kalp-damar hastalıkları, diyabet, hipertansiyon v.b. kronik hastalıklar için risk faktörüdür. "
-    }
-    else if(ıbw>39){weight=k;
-        height=b*100;
-        idealWeight=idealKilo;
-        ibwDescription="3. Derece Obezite. Boyunuza göre vücut ağırlığınızın fazla olduğunu bir başka deyişle şişman olduğunuzun bir göstergesidir. Şişmanlık, kalp-damar hastalıkları, diyabet, hipertansiyon v.b. kronik hastalıklar için risk faktörüdür. "
-    }
-    showUI(weight,height,ibwDescription,idealWeight);
 };
 
-export {calculateReruslt}
+
+const calculateReruslt = (ıbw, k, b, idealKilo) => {
+  let sex = document.getElementById("sex");
+  let weight = document.getElementById("weight");
+  let height = document.getElementById("height");
+  let ibwDescription = document.getElementById("ibwDescription");
+  let idealWeight = document.getElementById("idealWeight");
+
+  console.log(ıbw);
+  if (ıbw <= 18) {
+    weight = k;
+    height = b * 100;
+    idealWeight = idealKilo;
+    ibwDescription =
+      "Boyunuza göre uygun ağırlıkta olmadığınızı, zayıf olduğunuzu gösterir. Boyunuza uygun ağırlığa erişmeniz için yeterli ve dengeli beslenmeli, beslenme alışkanlıklarınızı geliştirmeye özen göstermelisiniz.";
+  } else if (ıbw < 24) {
+    weight = k;
+    height = b * 100;
+    idealWeight = idealKilo;
+    ibwDescription =
+      "Boyunuza göre uygun ağırlıkta olduğunuzu gösterir. Yeterli ve dengeli beslenerek ve düzenli fiziksel aktivite yaparak bu ağırlığınızı korumaya özen gösteriniz.";
+  } else if (ıbw < 29) {
+    weight = k;
+    height = b * 100;
+    idealWeight = idealKilo;
+    ibwDescription =
+      "Boyunuza göre vücut ağırlığınızın fazla olduğunu gösterir. Fazla kilolu olma durumu gerekli önlemler alınmadığı takdirde pek çok hastalık için risk faktörü olan obeziteye (şişmanlık) yol açar.";
+  } else if (ıbw < 34) {
+    weight = k;
+    height = b * 100;
+    idealWeight = idealKilo;
+    ibwDescription =
+      "1. Derece Obezite. Boyunuza göre vücut ağırlığınızın fazla olduğunu bir başka deyişle şişman olduğunuzun bir göstergesidir. Şişmanlık, kalp-damar hastalıkları, diyabet, hipertansiyon v.b. kronik hastalıklar için risk faktörüdür. ";
+  } else if (ıbw < 39) {
+    weight = k;
+    height = b * 100;
+    idealWeight = idealKilo;
+    ibwDescription =
+      "2. Derece Obezite. Boyunuza göre vücut ağırlığınızın fazla olduğunu bir başka deyişle şişman olduğunuzun bir göstergesidir. Şişmanlık, kalp-damar hastalıkları, diyabet, hipertansiyon v.b. kronik hastalıklar için risk faktörüdür. ";
+  } else if (ıbw > 39) {
+    weight = k;
+    height = b * 100;
+    idealWeight = idealKilo;
+    ibwDescription =
+      "3. Derece Obezite. Boyunuza göre vücut ağırlığınızın fazla olduğunu bir başka deyişle şişman olduğunuzun bir göstergesidir. Şişmanlık, kalp-damar hastalıkları, diyabet, hipertansiyon v.b. kronik hastalıklar için risk faktörüdür. ";
+  }
+  showUI(weight, height, ibwDescription, idealWeight);
+};
+
+export { calculateReruslt };
