@@ -1,6 +1,6 @@
 let showUI = (weight, height, ibwDescription, idealWeight) => {
   let menu = document.getElementById("menu");
-  menu.innerHTML = `<div class="reuslt-menu">
+  menu.innerHTML = `<div class="result-menu">
     <div class="first-card">
         <div class="values">
             <div>

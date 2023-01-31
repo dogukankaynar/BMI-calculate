@@ -3,21 +3,20 @@
     padding: 0;
 }
 body{
-    width: 100%;
     display: flex;
     justify-content:center;
     font-family: 'Inter';
     background-color: #F8F9FA;
 }
 .container{
-    width: 100%;
+    width: 1280px;
+    max-width: 1280px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .header{
-    width: 100%;
     height: 62px;
     display: flex;
     align-items: center;
@@ -38,7 +37,7 @@ body{
     margin-top: 150px;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     margin-bottom: 50px;
     
 }
@@ -50,7 +49,7 @@ body{
     gap: 30px;
 }
 .content-firts-text{
-    width:405px;
+    width:400px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -64,7 +63,7 @@ body{
     display: flex;
     flex-direction: column; 
     align-items: flex-start;
-    padding: 32px;
+    padding: 30px;
     gap: 24px;
 }
 
@@ -238,7 +237,7 @@ color: #242E42;
     height: 20px;
 }
 .menu2{
-    width: 100%;
+    width: 1280px;
     background-color: white;
     display: flex;
     align-items: center;
@@ -291,7 +290,7 @@ color: #242E42;
 summary{
     list-style: none;
 }
-.reuslt-menu{
+.result-menu{
     display: flex;
     width: 827px;
     height:auto;
@@ -352,4 +351,84 @@ summary{
 }
 .second-card img{
     width:400px;
+}
+
+
+@media only screen and (max-width: 768px){
+.header{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    gap:0;
+
+}
+.header-menu{
+    display: flex;
+    flex-direction: column;
+}
+ .container{
+    width:100%;
+    height: auto;
+ }
+ .menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+ }
+ .result-menu{
+    display: flex;
+    width: 100%;
+    height:auto;
+    flex-direction: column;
+ }
+ .first-card{
+    width: 100%;
+ }
+ .content-first{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    
+ }
+ .contet-first-card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 0;
+ }
+ .menu2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+ }
+ .content-second{
+    width: 100%;
+    padding: 30px;
+ }
+.content-second-menu{
+    width: 100%;
+}
+.menu-title{
+    width: 100%;
+    
+}
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    margin-left: 20px;
+}
+.footer-menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.menu-main{
+    width: 96%;
+}
+
 }
